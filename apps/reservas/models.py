@@ -22,3 +22,6 @@ class Reserva(models.Model):
         if self.asiento and self.bus:
             if self.asiento > self.bus.capacidad:
                 raise ValidationError('Este número de asiento no existe en el bus.')
+            
+    def __str__(self):
+        return f'{self.bus} | {self.pasajero}'

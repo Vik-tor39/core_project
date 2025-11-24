@@ -29,4 +29,10 @@ class Bus(models.Model):
             raise ValueError('La ocupación actual no puede superar a la capacidad total')
 
     def __str__(self):
-        return f'{self.cooperativa} Bus'
+        return f'{self.cooperativa}: {self.ruta}'
+    
+    @property
+    def porcentaje_ocupacion(self):
+        if self.capacidad == 0:
+            return 0
+        return int((self.ocupacion_actual / self.capacidad) * 100)
