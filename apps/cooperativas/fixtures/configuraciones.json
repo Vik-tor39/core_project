@@ -1,0 +1,38 @@
+[
+{
+  "model": "cooperativas.configuracioncoop",
+  "pk": 9,
+  "fields": {
+    "umbral_ocupacion": 12,
+    "ventana_tiempo": 67,
+    "cooperativa": 14
+  }
+},
+{
+  "model": "cooperativas.configuracioncoop",
+  "pk": 10,
+  "fields": {
+    "umbral_ocupacion": 60,
+    "ventana_tiempo": 60,
+    "cooperativa": 15
+  }
+},
+{
+  "model": "cooperativas.configuracioncoop",
+  "pk": 11,
+  "fields": {
+    "umbral_ocupacion": 60,
+    "ventana_tiempo": 60,
+    "cooperativa": 16
+  }
+},
+{
+  "model": "cooperativas.configuracioncoop",
+  "pk": 12,
+  "fields": {
+    "umbral_ocupacion": 60,
+    "ventana_tiempo": 60,
+    "cooperativa": 17
+  }
+}
+]

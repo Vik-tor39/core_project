@@ -1,0 +1,98 @@
+[
+{
+  "model": "rutas.ruta",
+  "pk": 1,
+  "fields": {
+    "origen": "Machala",
+    "destino": "Cuenca"
+  }
+},
+{
+  "model": "rutas.ruta",
+  "pk": 2,
+  "fields": {
+    "origen": "Machala",
+    "destino": "Guayaquil"
+  }
+},
+  {
+    "model": "rutas.ruta",
+    "pk": 3,
+    "fields": {
+      "origen": "Quito",
+      "destino": "Guayaquil"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 4,
+    "fields": {
+      "origen": "Quito",
+      "destino": "Cuenca"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 5,
+    "fields": {
+      "origen": "Guayaquil",
+      "destino": "Cuenca"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 6,
+    "fields": {
+      "origen": "Guayaquil",
+      "destino": "Loja"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 7,
+    "fields": {
+      "origen": "Cuenca",
+      "destino": "Loja"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 8,
+    "fields": {
+      "origen": "Loja",
+      "destino": "Quito"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 9,
+    "fields": {
+      "origen": "Ambato",
+      "destino": "Riobamba"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 10,
+    "fields": {
+      "origen": "Ambato",
+      "destino": "Quito"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 11,
+    "fields": {
+      "origen": "Santo Domingo",
+      "destino": "Quito"
+    }
+  },
+  {
+    "model": "rutas.ruta",
+    "pk": 12,
+    "fields": {
+      "origen": "Esmeraldas",
+      "destino": "Quito"
+    }
+  }
+]

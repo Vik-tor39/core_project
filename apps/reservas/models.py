@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 class Pasajero(models.Model):
@@ -15,3 +16,9 @@ class Reserva(models.Model):
     
     class Meta:
         unique_together = (('asiento', 'bus'),)
+
+    def clean(self):
+        super().clean()
+        if self.asiento and self.bus:
+            if self.asiento > self.bus.capacidad:
+                raise ValidationError('Este número de asiento no existe en el bus.')

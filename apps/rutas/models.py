@@ -22,5 +22,11 @@ class Bus(models.Model):
         verbose_name = 'bus'
         verbose_name_plural = 'buses'
 
+    # Validación personalizada:
+    def clean(self):
+        super().clean()
+        if self.ocupacion_actual and self.capacidad and self.ocupacion_actual > self.capacidad:
+            raise ValueError('La ocupación actual no puede superar a la capacidad total')
+
     def __str__(self):
         return f'{self.cooperativa} Bus'

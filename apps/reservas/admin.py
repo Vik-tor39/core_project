@@ -10,4 +10,4 @@ class PasajeroAdmin(admin.ModelAdmin):
 @admin.register(Reserva)
 class ReservaAdmin(admin.ModelAdmin):
     list_display = ('bus__cooperativa__nombre', 'pasajero', 'asiento')
-    form = ReservaForm
+    # form = ReservaForm

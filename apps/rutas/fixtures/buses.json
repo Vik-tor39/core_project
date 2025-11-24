@@ -1,0 +1,57 @@
+[
+{
+  "model": "rutas.bus",
+  "pk": 6,
+  "fields": {
+    "capacidad": 70,
+    "ocupacion_actual": 35,
+    "hora_salida": "2025-11-24T12:00:00Z",
+    "cooperativa": 14,
+    "ruta": 3
+  }
+},
+{
+  "model": "rutas.bus",
+  "pk": 7,
+  "fields": {
+    "capacidad": 85,
+    "ocupacion_actual": 60,
+    "hora_salida": "2025-11-24T12:00:00Z",
+    "cooperativa": 14,
+    "ruta": 3
+  }
+},
+{
+  "model": "rutas.bus",
+  "pk": 8,
+  "fields": {
+    "capacidad": 48,
+    "ocupacion_actual": 30,
+    "hora_salida": "2025-11-24T12:00:00Z",
+    "cooperativa": 15,
+    "ruta": 3
+  }
+},
+{
+  "model": "rutas.bus",
+  "pk": 9,
+  "fields": {
+    "capacidad": 70,
+    "ocupacion_actual": 55,
+    "hora_salida": "2025-11-24T12:00:00Z",
+    "cooperativa": 16,
+    "ruta": 3
+  }
+},
+{
+  "model": "rutas.bus",
+  "pk": 10,
+  "fields": {
+    "capacidad": 75,
+    "ocupacion_actual": 60,
+    "hora_salida": "2025-11-24T12:00:00Z",
+    "cooperativa": 17,
+    "ruta": 3
+  }
+}
+]

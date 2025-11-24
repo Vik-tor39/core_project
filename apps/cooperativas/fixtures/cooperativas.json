@@ -1,0 +1,74 @@
+[
+{
+  "model": "cooperativas.cooperativa",
+  "pk": 14,
+  "fields": {
+    "nombre": "Cooperativa Loja",
+    "ruc": "1190006820001",
+    "acuerdo_comision": "0.10"
+  }
+},
+{
+  "model": "cooperativas.cooperativa",
+  "pk": 15,
+  "fields": {
+    "nombre": "Cooperativa Santa",
+    "ruc": "1890006820001",
+    "acuerdo_comision": "0.10"
+  }
+},
+{
+  "model": "cooperativas.cooperativa",
+  "pk": 16,
+  "fields": {
+    "nombre": "Flota Imbabura",
+    "ruc": "1090007870001",
+    "acuerdo_comision": "0.10"
+  }
+},
+{
+  "model": "cooperativas.cooperativa",
+  "pk": 17,
+  "fields": {
+    "nombre": "Trans Esmeraldas",
+    "ruc": "1790092372001",
+    "acuerdo_comision": "0.10"
+  }
+},
+{
+  "model": "cooperativas.configuracioncoop",
+  "pk": 9,
+  "fields": {
+    "umbral_ocupacion": 12,
+    "ventana_tiempo": 67,
+    "cooperativa": 14
+  }
+},
+{
+  "model": "cooperativas.configuracioncoop",
+  "pk": 10,
+  "fields": {
+    "umbral_ocupacion": 60,
+    "ventana_tiempo": 60,
+    "cooperativa": 15
+  }
+},
+{
+  "model": "cooperativas.configuracioncoop",
+  "pk": 11,
+  "fields": {
+    "umbral_ocupacion": 60,
+    "ventana_tiempo": 60,
+    "cooperativa": 16
+  }
+},
+{
+  "model": "cooperativas.configuracioncoop",
+  "pk": 12,
+  "fields": {
+    "umbral_ocupacion": 60,
+    "ventana_tiempo": 60,
+    "cooperativa": 17
+  }
+}
+]

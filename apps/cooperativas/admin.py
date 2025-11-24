@@ -13,7 +13,7 @@ class ConfiguracionCoopInline(admin.StackedInline):
 class CooperativaAdmin(admin.ModelAdmin):
     search_fields = ('nombre',)
     inlines = [ConfiguracionCoopInline]
-    form = CooperativaForm
+    # form = CooperativaForm
 
 @admin.register(ConfiguracionCoop)
 class ConfiguracionCoopAdmin(admin.ModelAdmin):
