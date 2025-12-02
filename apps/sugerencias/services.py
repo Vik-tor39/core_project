@@ -20,6 +20,9 @@ def generar_sugerencias(limiti_por_origen=5):
             if destinos.exists():
                 destino = destinos.first()
             
+            else:
+                continue
+            
             # decidir mínimo de pasajeros entre total de espacio de destino o limite (así se evita grandes transferencias):
             sugerido = min(destino.capacidad - destino.ocupacion_actual, limiti_por_origen)
             if sugerido <= 0:

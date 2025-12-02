@@ -14,7 +14,9 @@ class CooperativaAdmin(admin.ModelAdmin):
     search_fields = ('nombre',)
     inlines = [ConfiguracionCoopInline]
     # form = CooperativaForm
+    list_display = ('nombre', 'ruc', 'acuerdo_comision')
 
 @admin.register(ConfiguracionCoop)
 class ConfiguracionCoopAdmin(admin.ModelAdmin):
     search_fields = ('cooperativa__nombre',)
+    list_display = ('cooperativa__nombre', 'umbral_ocupacion', 'ventana_tiempo',)

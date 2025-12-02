@@ -9,6 +9,7 @@ class RutaAdmin(admin.ModelAdmin):
 
 @admin.register(Bus)
 class BusAdmin(admin.ModelAdmin):
-    list_display = ('cooperativa__nombre', 'ruta')
+    list_display = ('cooperativa__nombre', 'ruta', 'ocupacion_actual', 'capacidad', 
+                    'porcentaje_ocupacion', 'cooperativa__configuracion__umbral_ocupacion')
     # form = BusForm
     # readonly_fields = ('ocupacion_actual',)

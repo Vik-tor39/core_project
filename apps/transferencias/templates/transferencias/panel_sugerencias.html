@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+    {% block content %}
+    <h1>Sugerencias pendientes</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Origen</th>
+                <th>Destino</th>
+                <th>Pasajeros</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for s in sugerencias %}
+            <tr>
+                <td>{{ s.id }}</td>
+                <td>{{ s.bus_origen }}</td>
+                <td>{{ s.bus_destino }}</td>
+                <td>{{ s.pasajeros_sugeridos }}</td>
+                <td>
+                <form method="post" action="{% url 'aceptar_sugerencia' s.id %}">
+                    {% csrf_token %}
+                    <button class="btn btn-primary" type="submit">Aceptar</button>
+                </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+ {% endblock %}
