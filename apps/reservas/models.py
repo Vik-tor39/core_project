@@ -10,18 +10,19 @@ class Pasajero(models.Model):
         return f'{self.nombre} ({self.ci})'
 
 class Reserva(models.Model):
-    asiento = models.PositiveIntegerField()
     pasajero = models.ForeignKey(Pasajero, related_name='pasajero_reservas', on_delete=models.CASCADE)
-    bus = models.ForeignKey('rutas.Bus', related_name='bus_reservas', on_delete=models.CASCADE)
-    
-    class Meta:
-        unique_together = (('asiento', 'bus'),)
+    viaje = models.ForeignKey('rutas.Viaje', related_name='viaje_reservas', on_delete=models.CASCADE)
+    fecha_reserva = models.DateTimeField(auto_now_add=True)
 
-    def clean(self):
-        super().clean()
-        if self.asiento and self.bus:
-            if self.asiento > self.bus.capacidad:
-                raise ValidationError('Este número de asiento no existe en el bus.')
-            
+    ESTADOS = [
+        ('CONFIRMADA', 'Confirmada'),
+        ('CANCELADA', 'Cancelada'),
+        ('TRANSFERIDA', 'Transferida'),
+    ]
+    
+    estado = models.CharField(max_length=20, choices=ESTADOS, default='CONFIRMADA')
+
+    precio = models.DecimalField(max_digits=7, decimal_places=2)
+
     def __str__(self):
-        return f'{self.bus} | {self.pasajero}'
+        return f"Reserva {self.id} - Pasajero {self.pasajero} - Viaje {self.viaje}"
